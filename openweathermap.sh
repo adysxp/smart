@@ -1,4 +1,4 @@
-```
+<pre>
 - platform: template
     sensors:
       openweather_cloud_cover_now:
@@ -109,6 +109,6 @@ sensor:
     value_template: "{{ value_json['current']['dt'] | timestamp_custom('%Y-%m-%d %H:%M', true) }}"
     resource: https://api.openweathermap.org/data/2.5/onecall?lat=<strong>{my_latitude}</strong>=<strong>{my_longitude}</strong>=<strong>{MY_API_KEY}</strong>&units=metric&lang=en
     scan_interval: 3600        
-```        
+</pre>       
 
         
